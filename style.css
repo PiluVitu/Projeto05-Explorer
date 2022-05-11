@@ -1,0 +1,50 @@
+:root{
+  font-size: 62.5%;/*1rem = 10px*/
+  --hue: 250;
+  --bg-primary: hsla(calc(var(--hue) - 13), 22%, 20%, 1);
+  --ft--primary: hsla(0, 0%, 100%, 1);
+  --ft-secondary: hsla(var(--hue), 50%, 80%, 1);
+  --ft-dark: hsla(var(--hue) 100%, 11%, 1);
+}
+
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  
+  text-decoration: none;
+
+  list-style: none;
+
+
+}
+
+body{
+  font-family: 'Epilogue', sans-serif;
+
+  font-size: 1.6rem;
+
+  text-align: center;
+
+  background-color: var(--bg-primary);
+
+  color: var(--ft--primary);
+}
+
+header h4{
+  color: var(--ft-secondary);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+header h1{
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.8rem;
+
+  margin-block: 1.7rem 8rem;
+}
