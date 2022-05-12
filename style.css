@@ -138,8 +138,14 @@ main {
   }
 }
 
-@media (min-width: 800px){
-  body{
+@media (max-width:332px){
+  :root{
+    font-size: 40%;
+  }
+}
+
+@media(min-width:780px) {
+ body{
     padding: 9.2rem 10rem 14.8rem;
   }
   
@@ -152,17 +158,18 @@ main {
     line-height: 6.4rem;
 
     letter-spacing: -1px;
-  }
-  
-  main{
-    grid-template-columns: 1fr 1fr;
-  }
+  } 
 
+  main{
+    grid-template-areas: "A B" "C D";
+
+    grid-template-rows: 1fr 1fr
+  }
 }
 
-@media (min-width: 980px){
+@media (min-width: 936px){
   main{
-    grid-template-areas: "A B B B B " "C C C C D";
+    grid-template-areas: "A B B B" "C C C D";
   }
   .colA{
     grid-area: A;
