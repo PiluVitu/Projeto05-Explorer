@@ -89,11 +89,11 @@ main {
 .card h2 {
   position: absolute;
   left: 2.8rem;
-  bottom: 5.1rem;
+  bottom: 5.2rem;
 
   display: flex;
   flex-direction: column;
-  gap: 2.3rem;
+  gap: 2.8rem;
 
   font-weight: 800;
   font-size: 4rem;
@@ -138,9 +138,9 @@ main {
   }
 }
 
-@media (min-width: 756px){
+@media (min-width: 800px){
   body{
-    padding: 9.2rem 13.5rem 14.8rem;
+    padding: 9.2rem 10rem 14.8rem;
   }
   
   .page {
@@ -153,10 +153,16 @@ main {
 
     letter-spacing: -1px;
   }
-
+  
   main{
-    grid-template-areas: "A B B"
-    "C C  D";
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 980px){
+  main{
+    grid-template-areas: "A B B B B " "C C C C D";
   }
   .colA{
     grid-area: A;
