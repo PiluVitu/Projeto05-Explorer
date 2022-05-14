@@ -83,7 +83,7 @@ main {
 }
 .card img:hover {
   transform: scale(1.1);
-  opacity: 0.5;
+  filter: blur(1.5px);
 }
 
 .card h2 {
@@ -96,7 +96,7 @@ main {
   gap: 2.8rem;
 
   font-weight: 800;
-  font-size: 4rem;
+  font-size:clamp(3rem,0.5rem + 3vw , 4rem);
   line-height: 4.8rem;
 }
 .card h2 span {
@@ -138,17 +138,11 @@ main {
   }
 }
 
-@media (max-width:332px){
-  :root{
-    font-size: 40%;
-  }
-}
-
-@media(min-width:780px) {
- body{
+@media (min-width: 780px) {
+  body {
     padding: 9.2rem 10rem 14.8rem;
   }
-  
+
   .page {
     max-width: 117rem;
   }
@@ -158,29 +152,29 @@ main {
     line-height: 6.4rem;
 
     letter-spacing: -1px;
-  } 
+  }
 
-  main{
-    grid-template-areas: "A B" "C D";
+  main {
+    grid-template-areas: 'A B' 'C D';
 
-    grid-template-rows: 1fr 1fr
+    grid-template-rows: 1fr 1fr;
   }
 }
 
-@media (min-width: 936px){
-  main{
-    grid-template-areas: "A B B B" "C C C D";
+@media (min-width: 936px) {
+  main {
+    grid-template-areas: 'A B B B B B' 'C C C C C D';
   }
-  .colA{
+  .colA {
     grid-area: A;
   }
-  .colB{
+  .colB {
     grid-area: B;
   }
-  .colC{
+  .colC {
     grid-area: C;
   }
-  .colD{
+  .colD {
     grid-area: D;
   }
 }
